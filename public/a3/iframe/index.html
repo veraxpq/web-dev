@@ -5,9 +5,8 @@
     <title>Title</title>
 </head>
 <body>
-    <a name="top">
-        <h2>Table of content</h2>
-    </a>
+    <a name="top"></a>
+    <h2>Table of content</h2>
     <ul>
         <li><a href="#embedding-website">
             Embedding other websites</a></li>
@@ -17,18 +16,24 @@
             Embedding Google slide</a></li>
     </ul>
 
-    <a name="embedding-website">
-        <h2>Embedding other websites</h2>
-    </a>
+    <a name="embedding-website"></a>
+    <h2>Embedding other websites</h2>
     <a href="#top">Top</a><br/>
+
+    <a name="embedding-youtube"></a>
+    <h2>Embedding YouTube</h2>
+    <a href="#top">Top</a><br/>
+
+    <a name="embedding-slides"></a>
+    <h2>Embedding Google slides</h2>
+    <a href="#top">Top</a><br/>
+
+    <h2>Embedding other websites</h2>
     <iframe width="600"
             height="400"
             src="https://en.wikipedia.org/wiki/SpaceX">
     </iframe>
-    <a name="embedding-youtube">
-        <h2>Embedding a YouTube video</h2>
-    </a>
-    <a href="#top">Top</a><br/>
+    <h2>Embedding a YouTube video</h2>
     <iframe width="560"
             height="315"
             src="https://www.youtube.com/embed/7CZTLogln34"
@@ -38,8 +43,6 @@
             allowfullscreen>
     </iframe>
     <h2>Embedding Google slides</h2>
-    <a name="embedding-slides"></a>
-    <a href="#top">Top</a><br/>
     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQoIYM2gXzRLKt4q5D2-ZahG7zvVcAipkRvj5k9GVLiGDs8NPlLpO3Q08cPUKQbqhL6g8aZp1ZJSwrw/embed?start=false&loop=false&delayms=3000"
             frameborder="0"
             width="680"
@@ -48,7 +51,20 @@
             mozallowfullscreen="true"
             webkitallowfullscreen="true">
     </iframe>
-
+    <svg	width="300"
+            height="100">
+        <rect	width="300"
+                 height="100"
+                 style="fill:rgb(0,0,255);
+	stroke:rgb(0,0,0);
+	stroke-width:10;
+	" />
+        <circle cx="50" cy="50"
+                r="40"
+                stroke="green"
+                stroke-width="4"
+                fill="yellow" />
+    </svg>
 
 </body>
 </html>

@@ -1,0 +1,242 @@
+.wd-link-color {
+    color: rgb(110, 118, 125);
+}
+.wd-search-bar-color {
+    background-color: rgb(33, 35, 39);
+}
+
+.wd-deep-gray-color {
+    color: rgb(33, 35, 39);
+}
+
+.wd-dark-gray-color {
+    color: rgb(110, 118, 125);
+}
+.wd-posts-font {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-font-color-white {
+    color: white;
+}
+
+.wd-font-bold {
+    font-weight: bold;
+}
+
+.wd-font-weight-normal {
+    font-weight: normal;
+}
+
+body {
+    background-color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.wd-background-color {
+    background-color: darkgray;
+}
+
+.wd-search-pic {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    margin-left: 12px;
+    margin-top: 3px;
+}
+
+.wd-search-setting {
+    margin-right: 5px;
+    margin-left: 12px;
+}
+.wd-search-text {
+    position: absolute;
+    width: 90%;
+    height: 30px;
+    border-radius: 15px 15px 15px 15px;
+    padding-left: 50px;
+    border-width: 0;
+}
+
+.wd-align-right {
+    display: inline;
+    float: right;
+}
+
+.wd-grid-row {
+    clear: both;
+    padding-top: 10px;
+}
+
+.wd-grid-row-clear {
+    clear: both;
+}
+
+.wd-grid-row .wd-grid-row-item {
+    width: 14%;
+    height: 26px;
+    float: left;
+    color: rgb(110, 118, 125);
+    text-align: center;
+    font-size: 15px;
+}
+
+.wd-grid-row .wd-link-color-selected {
+    color: rgb(29,161,242);
+    border-bottom-color: rgb(29,161,242);
+    border-bottom-width: 2px;
+    border-bottom: solid;
+    text-align: center;
+    font-size: 15px;
+}
+ .wd-hr {
+     border-color: rgb(33, 35, 39);
+     margin-bottom: 15px;
+     border-width: 2px;
+ }
+
+ .wd-more {
+     float: right;
+ }
+
+ .wd-gray-more {
+     float: right;
+     margin-top: 20px;
+     margin-right: -20px;
+ }
+
+ .wd-pic-float-right {
+     float: right;
+     margin-right: 16px;
+     width: 100px;
+     height: 100px;
+     border-radius: 20px;
+     margin-bottom: 15px;
+ }
+
+.wd-gray-more-single {
+    float: right;
+    margin-top: 20px;
+}
+
+.wd-title-font {
+    margin-left: 16px;
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.wd-user-info {
+    color: lightgray;
+    font-size: 13px;
+    margin-left: 16px;
+    margin-bottom: 12px;
+    border-bottom-width: 1px;
+    border-bottom-color: lightgray;
+    border-bottom: solid;
+    padding-bottom: 15px;
+}
+
+.wd-avatar {
+    margin-left: 16px;
+    margin-top: 12px;
+    border-radius: 24px;
+    width: 48px;
+    height: 48px;
+    float: left;
+}
+
+.wd-post-content {
+    margin-left: 16px;
+    margin-top: 12px;
+    color: white;
+    font-size: 20px;
+    float: left;
+    display: contents;
+}
+
+.wd-post-author {
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-post-date {
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-post-content-main {
+    color: white;
+    font-size: 15px;
+    width: 506px;
+    margin-left: 16px;
+    float: left;
+}
+
+.wd-post-username {
+    margin-left: 16px;
+    font-size: 15px;
+}
+
+.wd-post-image {
+    width: 504px;
+    height: 264px;
+    margin-top: 12px;
+    margin-left: 76px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.wd-post-text {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    padding: 12px 12px 0px 0px;
+}
+
+.wd-post-text-gray {
+    color: lightgray;
+    font-size: 15px;
+    font-weight: normal;
+    padding-bottom: 12px;
+}
+
+.wd-post-text-border {
+    border: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 76px;
+    width: 492px;
+    padding: 0px 0px 12px 12px;
+}
+
+.wd-post-website{
+    color: lightgray;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.wd-link-layout {
+    margin-left: 76px;
+    padding: 12px 0px 12px 12px;
+}
+
+.wd-link-layout a {
+    color: black;
+}
+
+.wd-post-like-num {
+    color: #ff7070;
+}
+
+.wd-post-number {
+    color: lightgray;
+    font-size: 15px;
+    margin-left: 12px;
+    margin-right: 90px;
+}
