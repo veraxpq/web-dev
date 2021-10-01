@@ -133,10 +133,10 @@ body {
     color: lightgray;
     font-size: 13px;
     margin-left: 16px;
+    border-bottom-style: solid;
     margin-bottom: 12px;
     border-bottom-width: 1px;
     border-bottom-color: lightgray;
-    border-bottom: solid;
     padding-bottom: 15px;
 }
 
