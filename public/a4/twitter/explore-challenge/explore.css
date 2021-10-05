@@ -1,0 +1,165 @@
+body {
+    margin-top: 10px;
+    background-color: black;
+}
+
+.list-group .active {
+    background-color: #1e9bf0;
+}
+
+.wd-font-shrink {
+    font-size: xx-small;
+    margin-left: -3px;
+}
+
+.wd-tweet-btn {
+    border-radius: 16px;
+    width: 100%;
+    margin-top: 5px;
+    background-color: #1e9bf0;
+}
+
+.wd-search-bar {
+    border: none;
+    width: 100%;
+    height: 36px;
+    margin-left: -13px;
+    background-color: #212327;
+}
+
+.wd-search-bar-div {
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: #212327;
+}
+
+.wd-search-bar-parent-div {
+    align-items: center;
+    margin-left: 2px;
+}
+
+.wd-search-icon {
+    margin-left: -10px;
+    color: #585f66;
+}
+
+.wd-icon-setting {
+    font-size: 20px;
+    color: white;
+}
+
+.wd-nav-tabs {
+    margin-top: 5px;
+    color: #91979e;
+    border-bottom-color: #91979e;
+    border-bottom-style: solid;
+}
+
+.nav-tabs .nav-item .active {
+    color: white;
+    background-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-spacing: initial ;
+    border-bottom-color: #1e9bf0;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+}
+
+.wd-nav-item {
+    color: #91979e;
+}
+
+.wd-main-img {
+    width: 100%;
+}
+
+.wd-main-img-title {
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    margin-top: -42px;
+    margin-left: 8px;
+}
+
+.wd-list-imgs {
+    width: 100%;
+}
+
+.wd-list-title {
+    color: #91979e;
+    font-weight: normal;
+}
+
+.wd-list-time {
+    color: #91979e;
+    font-weight: normal;
+}
+
+.wd-list-font-bold {
+    font-weight: bold;
+    color: #d9d9d9;
+}
+
+.wd-list-center {
+    align-items: center;
+}
+
+.wd-list-follow-btn {
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    color: black;
+    font-weight: bold;
+    border: none;
+}
+
+.wd-list-round-imgs {
+    border-radius: 100%;
+}
+
+.wd-left-bg {
+    background-color: black;
+    color: #d9d9d9;
+}
+
+.wd-follow-user {
+    color: #697278;
+}
+
+.wd-follow-show {
+    background-color: black;
+    color: #1e9bf0;
+    font-weight: normal;
+}
+
+.wd-list-user {
+    color: #1e9bf0;
+}
+
+.wd-list-more {
+    float: right;
+}
+
+.wd-middle-layout {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-color: #697278;
+    border-right-color: #697278;
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+
+.wd-middle-image-layout {
+    border: solid;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #697278;
+    border-bottom-color: #697278;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
