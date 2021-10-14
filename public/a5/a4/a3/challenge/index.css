@@ -1,0 +1,256 @@
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+.rotate-image {
+    transform: rotate(-10deg);
+}
+.rotate-my-image {
+    transform: rotate(10deg);
+}
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+.gradients-linear-practice {
+    background: linear-gradient(blue, purple);
+    width: 200px;
+    height: 200px;
+}
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+.gradients-radial-practice {
+    background: radial-gradient(green, gray);
+    width: 200px;
+    height: 200px;
+}
+.gradients-positioned {
+    background:
+            radial-gradient(at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+.gradient-positioned-practice {
+    background: radial-gradient(at top right, white, black);
+    width: 200px;
+    height: 200px;
+    color: red;
+}
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }
+
+
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+.animation-keyframes-practice {
+    position: relative;
+    top: 0px;
+    animation-duration: 12s;
+    animation-name: slidedown;
+    width: 200px;
+    height: 200px;
+    background-color: #7070ff;
+    color: lightgray;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidedown {
+    from {
+        position: relative;
+        top: 200px;
+        font-size: 50%;
+        margin-left: 60%;
+        width: 200px;
+        height: 200px;
+    }
+    50% {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 180px;
+        height: 180px;
+        background-color: #ff7070;
+        color: blanchedalmond;
+    }
+    to {
+        position: relative;
+        top: 200px;
+        font-size: 50%;
+        margin-left: 50%;
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+    }
+}
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: yellow;
+}
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+.flex-container1 {
+    display: flex;
+    justify-content: center;
+}
+.flex-container2 {
+    display: flex;
+    justify-content: end;
+}
+.flex-container3 {
+    display: flex;
+    justify-content: space-around;
+}
+.flex-container4 {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container5 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.flex-container6 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex-container7 {
+    display: flex;
+}
+.flex-container7 > .flex-box {
+    flex-basis: 100%;
+}
+@media (min-width: 0px) and (max-width: 600px) {
+    body {
+        background-color: blue;
+    }
+    .media-query {
+        background-color: rebeccapurple;
+        color: wheat;
+    }
+}
+@media (min-width: 400px) and (max-width: 1000px) {
+    .media-query3 {
+        background-color: burlywood;
+        color: green;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1800px) {
+    .media-query {
+        background-color: olive;
+        color: white;
+    }
+    .media-query2 {
+        background-color: aquamarine;
+        color: beige;
+    }
+}
+
+
+

@@ -1,0 +1,54 @@
+.wd-hidden {
+    visibility: hidden;
+}
+.wd-postlist {
+    background-color: #060606;
+    border: none;
+}
+.wd-list-imgs {
+    width: 100%;
+    border-radius: 100%;
+}
+.wd-home-postimg {
+    width: 100%;
+    border-radius: 10px;
+}
+.wd-home-userinfo {
+    color: #585f66;
+    font-weight: normal;
+}
+.wd-home-username {
+    color: white;
+    font-weight: bold;
+}
+.wd-home-post-main {
+    margin-top: 12px;
+    border: 1px solid #585f66;
+    border-radius: 10px;
+}
+.wd-home-title {
+    padding: 10px;
+}
+.wd-home-content {
+    padding: 0 10px 0 10px;
+    color: #585f66;
+}
+.wd-home-link {
+    color: #585f66;
+    padding: 0 0 10px 10px;
+}
+.wd-home-item {
+    border-bottom: 1px solid #585f66;
+    background-color: #060606;
+}
+.wd-post-status {
+    color: #585f66;
+    padding: 10px 0 10px 0;
+}
+.wd-home-more {
+    float: right;
+}
+.list-group-item .active {
+    background-color: #1e9bf0;
+
+}

@@ -1,0 +1,90 @@
+body {
+    margin: 10px;
+}
+
+.wd-font-shrink {
+    font-size: xx-small;
+    margin-left: -3px;
+}
+
+.wd-tweet-btn {
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.wd-search-bar {
+    border: none;
+    width: 100%;
+    height: 36px;
+    margin-left: -13px;
+
+}
+
+.wd-search-bar-div {
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: #e3e3e3;
+}
+
+.wd-search-bar-parent-div {
+    align-items: center;
+    margin-left: 2px;
+}
+
+.wd-search-icon {
+    margin-left: -10px;
+}
+
+.wd-icon-setting {
+    font-size: 25px;
+    color: #0d6dfd;
+}
+
+.wd-nav-tabs {
+    margin-top: 5px;
+}
+
+.wd-main-img {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.wd-main-img-title {
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    margin-top: -42px;
+    margin-left: 8px;
+}
+
+.wd-list-imgs {
+    width: 100%;
+}
+
+.wd-list-title {
+    color: #91979e;
+    font-weight: normal;
+}
+
+.wd-list-time {
+    color: #91979e;
+    font-weight: normal;
+}
+
+.wd-list-font-bold {
+    font-weight: bold;
+}
+
+.wd-list-center {
+    align-items: center;
+}
+
+.wd-list-follow-btn {
+    border-radius: 20px;
+}
+
+.wd-list-round-imgs {
+    border-radius: 100%;
+}
