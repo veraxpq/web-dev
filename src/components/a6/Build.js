@@ -1,8 +1,5 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import NavigationSidebar from "./build/NavigationSidebar/index";
-import WhoToFollowList from "./build/WhoToFollowList/index";
-import ExploreComponent from "./build/ExploreScreen/index"
 import './build.css';
 
 const Build = () => {
