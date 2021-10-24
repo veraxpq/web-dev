@@ -52,12 +52,11 @@
 }
 .wd-icon-setting {
     font-size: 30px;
-    color: #1e9bf0;
+    color: #2a9fd6;
 }
 
 .nav-tabs .nav-item .active {
     color: white;
-    background-color: #1e9bf0;
     border: none;
 }
 
@@ -121,8 +120,4 @@
 }
 .wd-home-more {
     float: right;
-}
-.list-group-item .active {
-    background-color: #1e9bf0;
-
 }
