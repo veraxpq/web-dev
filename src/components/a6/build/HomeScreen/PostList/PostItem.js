@@ -20,9 +20,8 @@ const PostItem = ({
                         · {post.time}
                         <img src="../../images/more-gray.svg" className="wd-home-more"/>
                     </div>
-                    <div>
-                        {post.comment}
-                    </div>
+                    <span dangerouslySetInnerHTML={{__html:post["comment"]}}></span>
+
                     <div className="wd-home-post-main">
                         <img src={post.image} className="wd-home-postimg"/>
                         {
