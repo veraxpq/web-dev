@@ -3,12 +3,11 @@ import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import HelloWorld from "./components/a6/HelloWorld";
-import Build from "./components/a6/Build";
-import Practice from "./components/a6/Practice.js";
+import Build from "./components/a7/Build";
 import {BrowserRouter, Route} from "react-router-dom";
 import HomeScreen from "./components/a6/build/HomeScreen/HomeScreen";
 import Explore from "./components/a6/build/ExploreScreen/explore";
-
+import Practice from "./components/a7/Practice"
 function App() {
   return (
       <>
@@ -25,6 +24,13 @@ function App() {
                   </Route>
                   <Route path={"/a6/twitter/home"} component={HomeScreen} />
                   <Route path="/a6/twitter/explore" component={Explore}/>
+                  <Route path={["/", "/a7", "/a7/practice"]} exact={true}>
+                      <Practice/>
+                  </Route>
+                  <Route path="/a7/twitter">
+                      <Build/>
+                  </Route>
+
               </div>
           </BrowserRouter>
       </>

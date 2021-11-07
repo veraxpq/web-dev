@@ -1,0 +1,17 @@
+[
+    {
+        "name" : "For you", "source":"#"
+    },
+    {
+        "name": "Trending", "source":"#"
+    },
+    {
+        "name": "News", "source": "#"
+    },
+    {
+        "name": "Sports", "source": "#"
+    },
+    {
+        "name": "Entertainment", "source": "#"
+    }
+]
