@@ -131,3 +131,87 @@
     border-right: none;
     border-bottom: solid 1px #585f66;
 }
+.wd-profile-name {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.wd-profile-tweetcount {
+    color: #585f66;
+    font-weight: normal;
+    font-size: 12px;
+}
+.wd-profile-banner {
+    width: 100%;
+}
+.wd-profile-pic {
+    height: 100px;
+    border-radius: 50px;
+    border: solid black;
+    margin-top: -35px;
+    margin-left: 10px;
+}
+.wd-profile-edit {
+    float: right;
+    border: solid 1px;
+    border-radius: 19px;
+    font-size: 13px;
+    margin: 8px;
+    padding: 6px 10px 6px 10px;
+}
+.wd-profile-handle {
+    font-size: 12px;
+    color: #585f66;
+}
+.wd-profile-bio {
+    font-size: 16px;
+    margin-top: 12px;
+}
+.wd-profile-status {
+    font-size: 12px;
+    color: #585f66;
+}
+.wd-profile-follow {
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+.wd-profile-flword {
+    font-size: 12px;
+    color: #585f66;
+}
+.wd-profile-save {
+    background-color: white;
+    float: right;
+    border-radius: 15px;
+    padding: 2px 9px 2px 9px;
+    color: black;
+    font-size: 12px;
+    margin: 2px;
+    text-decoration: none;
+}
+.wd-profile-edit-camera {
+    text-align: right;
+}
+.wd-profile-edit-icons {
+    margin-top: -95px;
+}
+.wd-profile-pic-edit {
+    margin-left: -55px;
+}
+.wd-profile-edit-border {
+    border: solid 1px #585f66;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 12px;
+    margin: 10px 5px;
+}
+.wd-profile-name-edit {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+.wd-profile-edit-birth {
+    font-size: 12px;
+    margin: 10px 5px;
+}

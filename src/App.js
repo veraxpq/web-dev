@@ -13,6 +13,7 @@ import tweets from "./reducers/tweets";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 import ProfileScreen from "./components/a7/build/ProfileScreen"
+import EditProfile from "./components/a7/build/EditProfile";
 
 const reducer = combineReducers({tweets, who})
 const store = createStore(reducer);
@@ -40,6 +41,9 @@ function App() {
                   </Route>
                   <Route path={"/a7/twitter/profile"}>
                       <ProfileScreen/>
+                  </Route>
+                  <Route path={"/a7/twitter/editProfile"}>
+                      <EditProfile/>
                   </Route>
               </div>
           </BrowserRouter>
