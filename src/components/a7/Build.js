@@ -1,8 +1,9 @@
 import React from "react";
-import {Link, Route} from "react-router-dom";
+import {Route} from "react-router-dom";
 import './build.css';
 import HomeScreen from "./build/HomeScreen/HomeScreen";
 import Explore from "./build/ExploreScreen/explore";
+
 
 const Build = () => {
     return(
@@ -12,7 +13,6 @@ const Build = () => {
             <Route path="/a7/twitter/explore"
                    exact={true} component={Explore}/>
         </div>
-
     )
 };
 

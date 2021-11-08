@@ -121,3 +121,13 @@
 .wd-home-more {
     float: right;
 }
+.wd-icon-blue{
+    color: #1e9bf0;
+}
+.wd-what-post {
+    background-color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px #585f66;
+}

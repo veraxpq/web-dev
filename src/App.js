@@ -8,9 +8,17 @@ import {BrowserRouter, Route} from "react-router-dom";
 import HomeScreen from "./components/a6/build/HomeScreen/HomeScreen";
 import Explore from "./components/a6/build/ExploreScreen/explore";
 import Practice from "./components/a7/Practice"
+import who from "./reducers/who";
+import tweets from "./reducers/tweets";
+import {combineReducers, createStore} from "redux";
+import {Provider} from "react-redux";
+import ProfileScreen from "./components/a7/build/ProfileScreen"
+
+const reducer = combineReducers({tweets, who})
+const store = createStore(reducer);
 function App() {
   return (
-      <>
+      <Provider store={store}>
           <BrowserRouter>
               <div className="container">
                   <Route path="/a6/hello" exact={true}>
@@ -30,12 +38,12 @@ function App() {
                   <Route path="/a7/twitter">
                       <Build/>
                   </Route>
-
+                  <Route path={"/a7/twitter/profile"}>
+                      <ProfileScreen/>
+                  </Route>
               </div>
           </BrowserRouter>
-      </>
-
-
+      </Provider>
   );
 }
 export default App;

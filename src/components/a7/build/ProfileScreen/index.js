@@ -1,15 +1,15 @@
-import React from "react";
-import NavigationSidebar from "../NavigationSidebar/index.js";
-import TweetList from "../TweetList";
-import PostSummaryList from "../../build/PostSummaryList/index";
+import NavigationSidebar from "../NavigationSidebar";
 import WhatsHappening from "../WhatsHappening";
+import TweetList from "../TweetList";
+import PostSummaryList from "../PostSummaryList";
+import React from "react";
 
-const HomeScreen = () => {
+const ProfileScreen = () => {
     return (
         <>
             <div className="row mt-2">
                 <div className="col-2 col-md-2 col-lg-1 col-xl-2">
-                    <NavigationSidebar active={{"status": "Home"}}/>
+                    <NavigationSidebar active={{"status": "Profile"}}/>
                 </div>
                 <div className="col-10 col-lg-7 col-xl-6 wd-postlist">
                     <WhatsHappening />
@@ -22,4 +22,5 @@ const HomeScreen = () => {
         </>
     );
 }
-export default HomeScreen;
+
+export default ProfileScreen;
