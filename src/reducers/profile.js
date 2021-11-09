@@ -1,6 +1,5 @@
 const profileData = {
-    firstName: 'Qing',
-    lastName: 'Peng',
+    name: 'Qing Peng',
     handle: 'sherry',
     profilePicture: '../../../images/pq.jpg',
     bannerPicture: '../../../images/polyglot.png',
@@ -13,4 +12,19 @@ const profileData = {
     followersCount: 180,
     tweetCount: 5196,
 }
-export default profileData;
+const profile = (state = profileData, action) => {
+    switch (action.type) {
+        case 'update-profile':
+            return {
+                ...state,
+                name: action.payload.name,
+                bio: action.payload.bio,
+                location: action.payload.location,
+                website: action.payload.website
+            }
+            break;
+        default:
+            return state;
+    }
+}
+export default profile;

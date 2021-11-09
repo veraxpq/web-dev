@@ -80,7 +80,7 @@ const NavigationSidebar = ({
                         </div>
                     </div>
                 </div>
-                <div className={"list-group-item wd-left-bg" +
+                <Link to={"/a7/twitter/profile"} className={"list-group-item wd-left-bg" +
                 (active.status === 'Profile' ? ' active' : '')}>
                     <div className="row">
                         <div className="col-2">
@@ -90,7 +90,7 @@ const NavigationSidebar = ({
                             Profile
                         </div>
                     </div>
-                </div>
+                </Link>
                 <div className={"list-group-item wd-left-bg" +
                 (active.status === 'More' ? ' active' : '')}>
                     <div className="row">

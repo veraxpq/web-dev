@@ -14,8 +14,9 @@ import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 import ProfileScreen from "./components/a7/build/ProfileScreen"
 import EditProfile from "./components/a7/build/EditProfile";
+import profile from "./reducers/profile";
 
-const reducer = combineReducers({tweets, who})
+const reducer = combineReducers({tweets, who, profile})
 const store = createStore(reducer);
 function App() {
   return (

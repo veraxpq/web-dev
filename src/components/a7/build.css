@@ -207,9 +207,11 @@
     margin: 10px 5px;
 }
 .wd-profile-name-edit {
+    background-color: black;
+    border: none;
     font-size: 15px;
+    width: 100%;
     color: white;
-    font-weight: bold;
 }
 .wd-profile-edit-birth {
     font-size: 12px;
