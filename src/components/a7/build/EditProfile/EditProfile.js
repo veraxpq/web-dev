@@ -39,9 +39,9 @@ const EditProfileComponent = () => {
     return (
         <>
             <div className={"row"}>
-                <div className={"col-1"}>
+                <Link to={"/a7/twitter/profile"} className={"col-1"}>
                     <i className="fas fa-times"></i>
-                </div>
+                </Link>
                 <div className={"col-10 wd-profile-name"}>
                     Edit
                     <span> </span>
@@ -93,7 +93,7 @@ const EditProfileComponent = () => {
             </div>
             <div className={"wd-profile-edit-birth"}>
                 Birth date ·
-                <Link to={"a7/twitter/edit"}>Edit</Link>
+                <Link to={"/a7/twitter/edit"}>Edit</Link>
             </div>
             <div className={"wd-profile-name-edit ps-1"}>
                 {profile.dateOfBirth}
