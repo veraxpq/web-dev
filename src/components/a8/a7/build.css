@@ -1,0 +1,219 @@
+.wd-list-images {
+    border-radius: 100%;
+    width: 100%;
+}
+
+.wd-list-font-bold {
+    font-weight: bold;
+}
+
+.wd-list-title {
+    color: #91979e;
+    font-weight: normal;
+}
+
+.wd-list-time {
+    color: #91979e;
+    font-weight: normal;
+}
+
+.wd-list-imgs {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.wd-search-bar-parent-div {
+    align-items: center;
+    margin-left: 2px;
+}
+
+.wd-search-bar-div {
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    background-color: white;
+}
+
+.wd-search-bar-parent-div {
+    align-items: center;
+    margin-left: 2px;
+}
+
+.wd-search-icon {
+    margin-left: -10px;
+    color: #585f66;
+}
+.wd-search-bar {
+    border: none;
+    width: 100%;
+    height: 36px;
+    margin-left: -13px;
+    background-color: white;
+}
+.wd-icon-setting {
+    font-size: 30px;
+    color: #2a9fd6;
+}
+
+.nav-tabs .nav-item .active {
+    color: white;
+    border: none;
+}
+
+.wd-main-img {
+    width: 100%;
+}
+
+.wd-main-img-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #262626;
+    margin-top: -68px;
+    margin-left: 8px;
+}
+.wd-hidden {
+    visibility: hidden;
+}
+.wd-postlist {
+    background-color: #060606;
+    border: none;
+}
+.wd-list-imgs {
+    width: 100%;
+    border-radius: 100%;
+}
+.wd-home-postimg {
+    width: 100%;
+    border-radius: 10px;
+}
+.wd-home-userinfo {
+    color: #585f66;
+    font-weight: normal;
+}
+.wd-home-username {
+    color: white;
+    font-weight: bold;
+}
+.wd-home-post-main {
+    margin-top: 12px;
+    border: 1px solid #585f66;
+    border-radius: 10px;
+}
+.wd-home-title {
+    padding: 10px;
+}
+.wd-home-content {
+    padding: 0 10px 0 10px;
+    color: #585f66;
+}
+.wd-home-link {
+    color: #585f66;
+    padding: 0 0 10px 10px;
+}
+.wd-home-item {
+    border-bottom: 1px solid #585f66;
+    background-color: #060606;
+}
+.wd-post-status {
+    color: #585f66;
+    padding: 10px 0 10px 0;
+}
+.wd-home-more {
+    float: right;
+}
+.wd-icon-blue{
+    color: #1e9bf0;
+}
+.wd-what-post {
+    background-color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px #585f66;
+}
+.wd-profile-name {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.wd-profile-tweetcount {
+    color: #585f66;
+    font-weight: normal;
+    font-size: 12px;
+}
+.wd-profile-banner {
+    width: 100%;
+}
+.wd-profile-pic {
+    height: 100px;
+    border-radius: 50px;
+    border: solid black;
+    margin-top: -35px;
+    margin-left: 10px;
+}
+.wd-profile-edit {
+    float: right;
+    border: solid 1px;
+    border-radius: 19px;
+    font-size: 13px;
+    margin: 8px;
+    padding: 6px 10px 6px 10px;
+}
+.wd-profile-handle {
+    font-size: 12px;
+    color: #585f66;
+}
+.wd-profile-bio {
+    font-size: 16px;
+    margin-top: 12px;
+}
+.wd-profile-status {
+    font-size: 12px;
+    color: #585f66;
+}
+.wd-profile-follow {
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+.wd-profile-flword {
+    font-size: 12px;
+    color: #585f66;
+}
+.wd-profile-save {
+    background-color: white;
+    float: right;
+    border-radius: 15px;
+    padding: 2px 9px 2px 9px;
+    color: black;
+    font-size: 12px;
+    margin: 2px;
+    text-decoration: none;
+}
+.wd-profile-edit-camera {
+    text-align: right;
+}
+.wd-profile-edit-icons {
+    margin-top: -95px;
+}
+.wd-profile-pic-edit {
+    margin-left: -55px;
+}
+.wd-profile-edit-border {
+    border: solid 1px #585f66;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 12px;
+    margin: 10px 5px;
+}
+.wd-profile-name-edit {
+    background-color: black;
+    border: none;
+    font-size: 15px;
+    width: 100%;
+    color: white;
+}
+.wd-profile-edit-birth {
+    font-size: 12px;
+    margin: 10px 5px;
+}

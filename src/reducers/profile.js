@@ -14,15 +14,36 @@ const profileData = {
 }
 const profile = (state = profileData, action) => {
     switch (action.type) {
+        case 'get-current-profile':
+            return action.profile;
         case 'update-profile':
             return {
                 ...state,
-                name: action.payload.name,
-                bio: action.payload.bio,
-                location: action.payload.location,
-                website: action.payload.website
+                name: action.profile.name,
+                bio: action.profile.bio,
+                location: action.profile.location,
+                website: action.profile.website
+            };
+        case 'update-name':
+            return {
+                ...state,
+                name: action.value
             }
-            break;
+        case 'update-bio':
+            return {
+                ...state,
+                name: action.value
+            }
+        case 'update-location':
+            return {
+                ...state,
+                name: action.value
+            }
+        case 'update-website':
+            return {
+                ...state,
+                name: action.value
+            }
         default:
             return state;
     }

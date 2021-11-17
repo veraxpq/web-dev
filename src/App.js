@@ -7,17 +7,22 @@ import Build from "./components/a7/Build";
 import {BrowserRouter, Route} from "react-router-dom";
 import HomeScreen from "./components/a6/build/HomeScreen/HomeScreen";
 import Explore from "./components/a6/build/ExploreScreen/explore";
-import Practice from "./components/a7/Practice"
+import Practice from "./components/a8/Practice"
 import who from "./reducers/who";
 import tweets from "./reducers/tweets";
-import {combineReducers, createStore} from "redux";
+import {applyMiddleware, combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 import ProfileScreen from "./components/a7/build/ProfileScreen"
 import EditProfile from "./components/a7/build/EditProfile";
 import profile from "./reducers/profile";
+import PracticeA8 from "./components/a8/a7/Practice";
+import HomeScreenA8 from "./components/a8/a7/build/HomeScreen/HomeScreen";
+import EditProfileA8 from "./components/a8/a7/build/EditProfile";
+import ProfileScreenA8 from "./components/a8/a7/build/ProfileScreen";
+import logger from 'redux-logger';
 
 const reducer = combineReducers({tweets, who, profile})
-const store = createStore(reducer);
+const store = createStore(reducer, applyMiddleware(logger));
 function App() {
   return (
       <Provider store={store}>
@@ -45,6 +50,19 @@ function App() {
                   </Route>
                   <Route path={"/a7/twitter/editProfile"}>
                       <EditProfile/>
+                  </Route>
+                  <Route path={["/", "/a8", "/a8/practice"]} exact={true}>
+                      <Practice/>
+                  </Route>
+                  <Route path={"/a8/practice"}>
+                      <PracticeA8/>
+                  </Route>
+                  <Route path={"/a8/twitter/home"} component={HomeScreenA8} />
+                  <Route path={"/a8/twitter/editProfile"}>
+                      <EditProfileA8/>
+                  </Route>
+                  <Route path={"/a8/twitter/profile"}>
+                      <ProfileScreenA8/>
                   </Route>
               </div>
           </BrowserRouter>
