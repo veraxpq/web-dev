@@ -16,8 +16,8 @@ const tweets = (state = posts, action) => {
                 "handle": "ReactJS",
                 "time": "2h",
                 ...action.tweet,
-                "avatar-image": "./images/react.png",
-                "logo-image": "./images/react.png",
+                "avatar-image": "../../../images/react.png",
+                "logo-image": "../../../images/react.png",
                 "stats": {
                     "comments": 123,
                     "retweets": 234,
@@ -38,12 +38,12 @@ const tweets = (state = posts, action) => {
             break;
         case 'like-tweet':
             return state.map(tweet => {
-                if(tweet._id === action.tweet._id) {
-                    if(tweet.liked === true) {
-                        tweet.liked = false;
+                if(tweet._id === action.id) {
+                    if(tweet.stats.liked === true) {
+                        tweet.stats.liked = false;
                         tweet.stats.likes--;
                     } else {
-                        tweet.liked = true;
+                        tweet.stats.liked = true;
                         tweet.stats.likes++;
                     }
                     return tweet;

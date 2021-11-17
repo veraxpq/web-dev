@@ -41,13 +41,12 @@ export const likeTweet = (dispatch, tweet) => {
     fetch(`${TWEET_API}/${tweet._id}/like`, {
         method: 'PUT'
     })
-        .then(response => response.json())
-        .then(likedTweet =>
+        .then(() =>
             dispatch({
                 type: 'like-tweet',
-                likedTweet
+                id: tweet._id
             }));
-    console.log("like:", tweet);
+    // console.log("like:", tweet);
 }
 
 

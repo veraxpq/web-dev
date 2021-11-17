@@ -3,6 +3,7 @@ import './tweet.css';
 // import TweetStats from "./TweetStats";
 import {useDispatch} from "react-redux";
 import {deleteTweet} from "../../../../../services/twitterService";
+import TweetStats from "./TweetStats";
 
 const TweetListItem = ({tweet}) => {
     const dispatch = useDispatch();
@@ -51,26 +52,27 @@ const TweetListItem = ({tweet}) => {
                        className="far fa-trash-alt fa-pull-right"></i>
                 </tr>
             </table>
-            <div className={"row"}>
-                <div className={"col-3"}>
-                    <i className="far fa-comment"></i>
-                    {tweet.stats.comments}
-                </div>
-                <div className="col-3">
-                    <i className="fas fa-retweet"></i>
-                    {tweet.stats.retweets}
-                </div>
-                <div className={"col-3"} onClick={likeClickHandler}>
-                    {
-                        <i className="fas fa-heart me-2"
-                                          style={{color: tweet.liked ? "red": "white"}}></i>
-                    }
-                    {tweet.stats.likes}
-                </div>
-                <div className={"col-3"}>
-                    <i className="fas fa-share-square"></i>
-                </div>
-            </div>
+            {/*<div className={"row"}>*/}
+            {/*    <div className={"col-3"}>*/}
+            {/*        <i className="far fa-comment"></i>*/}
+            {/*        {tweet.stats.comments}*/}
+            {/*    </div>*/}
+            {/*    <div className="col-3">*/}
+            {/*        <i className="fas fa-retweet"></i>*/}
+            {/*        {tweet.stats.retweets}*/}
+            {/*    </div>*/}
+                <TweetStats tweet={tweet}/>
+                {/*<div className={"col-3"} onClick={likeClickHandler}>*/}
+                {/*    {*/}
+                {/*        <i className="fas fa-heart me-2"*/}
+                {/*                          style={{color: tweet.liked ? "red": "white"}}></i>*/}
+                {/*    }*/}
+                {/*    {tweet.stats.likes}*/}
+                {/*</div>*/}
+            {/*    <div className={"col-3"}>*/}
+            {/*        <i className="fas fa-share-square"></i>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </li>
     );
 };
