@@ -6,14 +6,14 @@ import ConditionalOutput from "./Practice/ConditionalOutput";
 import Styles from "./Practice/Styles";
 import Classes from "./Practice/Classes";
 
-const Practice = () => {
+const PracticeA6 = () => {
     return(
         <>
             <h1>Practice</h1>
-            <Link to="/a7/hello">
+            <Link to="/a6/hello">
                 Hello
             </Link> |
-            <Link to="/a7/build">
+            <Link to="/a6/build">
                 Build
             </Link>
             <TodoList/>
@@ -24,4 +24,4 @@ const Practice = () => {
     )
 };
 
-export default Practice;
+export default PracticeA6;

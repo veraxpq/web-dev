@@ -3,7 +3,7 @@ import NavigationSidebar from "../NavigationSidebar";
 import ExploreComponent from "./index";
 import WhoToFollowList from "../WhoToFollowList";
 
-const Explore = () => {
+const ExploreA8 = () => {
     return (
         <>
             <div className="row mt-2">
@@ -21,4 +21,4 @@ const Explore = () => {
     )
 }
 
-export default Explore;
+export default ExploreA8;

@@ -20,6 +20,9 @@ import HomeScreenA8 from "./components/a8/a7/build/HomeScreen/HomeScreen";
 import EditProfileA8 from "./components/a8/a7/build/EditProfile";
 import ProfileScreenA8 from "./components/a8/a7/build/ProfileScreen";
 import logger from 'redux-logger';
+import PracticeA6 from "./components/a6/Practice";
+import PracticeA7 from "./components/a7/Practice";
+import ExploreA8 from "./components/a8/a7/build/ExploreScreen/explore";
 
 const reducer = combineReducers({tweets, who, profile})
 const store = createStore(reducer, applyMiddleware(logger));
@@ -32,7 +35,7 @@ function App() {
                       <HelloWorld/>
                   </Route>
                   <Route path={["/", "/a6", "/a6/practice"]} exact={true}>
-                      <Practice/>
+                      <PracticeA6/>
                   </Route>
                   <Route path={"/a6/build"} exact={true}>
                       <HomeScreen/>
@@ -40,7 +43,7 @@ function App() {
                   <Route path={"/a6/twitter/home"} component={HomeScreen} />
                   <Route path="/a6/twitter/explore" component={Explore}/>
                   <Route path={["/", "/a7", "/a7/practice"]} exact={true}>
-                      <Practice/>
+                      <PracticeA7/>
                   </Route>
                   <Route path="/a7/twitter">
                       <Build/>
@@ -60,6 +63,9 @@ function App() {
                   <Route path={"/a8/twitter/home"} component={HomeScreenA8} />
                   <Route path={"/a8/twitter/editProfile"}>
                       <EditProfileA8/>
+                  </Route>
+                  <Route path={"/a8/twitter/explore"}>
+                      <ExploreA8/>
                   </Route>
                   <Route path={"/a8/twitter/profile"}>
                       <ProfileScreenA8/>

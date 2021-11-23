@@ -7,7 +7,7 @@ import Styles from "./Practice/Styles";
 import Classes from "./Practice/Classes";
 import ReduxExamples from "./Practice/ReduxExamples/components/index";
 
-const Practice = () => {
+const PracticeA7 = () => {
     return(
         <>
             <h1>Practice</h1>
@@ -23,4 +23,4 @@ const Practice = () => {
     )
 };
 
-export default Practice;
+export default PracticeA7;
