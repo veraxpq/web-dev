@@ -1,13 +1,25 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import {postNewTweet} from "../../../../../services/twitterService";
+import {postNewTweet} from "../../services/twitterService";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tweetClickHandler = () => {
         postNewTweet(dispatch, {
-            tweet: whatsHappening
+            tweet: whatsHappening,
+            "topic": "Web Development",
+            "userName": "ReactJS",
+            "verified": false,
+            "handle": "ReactJS",
+            "time": "2h",
+            "avatar-image": "../../../images/react.png",
+            "logo-image": "../../../images/react.png",
+            "stats": {
+                "comments": 123,
+                "retweets": 234,
+                "likes": 345
+            },
         });
     }
 

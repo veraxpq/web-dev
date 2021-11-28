@@ -1,5 +1,6 @@
 const TWEET_API = 'http://localhost:4000/api/tweets';
 const PROFILE_API = 'http://localhost:4000/api/profile';
+const WHO_API = 'http://localhost:4000/api/who'
 // const TWEET_API = 'https://web-dev-node2123.herokuapp.com/api/tweets';
 // const PROFILE_API = 'https://web-dev-node2123.herokuapp.com/api/profile';
 
@@ -22,12 +23,13 @@ export const postNewTweet = (dispatch, newTweet) =>
         }
     })
         .then(response => response.json())
-        .then(tweet =>
-            dispatch({
-                type: 'create-tweet',
-                tweet
-            })
-        );
+        .then(tweet => {
+                dispatch({
+                    type: 'create-tweet',
+                    tweet
+                })
+                console.log(tweet)
+        });
 
 export const deleteTweet = (dispatch, tweet) =>
     fetch(`${TWEET_API}/${tweet._id}`, {
@@ -41,12 +43,12 @@ export const likeTweet = (dispatch, tweet) => {
     fetch(`${TWEET_API}/${tweet._id}/like`, {
         method: 'PUT'
     })
-        .then(() =>
+        .then(response => response.json())
+        .then((tweet) =>
             dispatch({
                 type: 'like-tweet',
-                id: tweet._id
+                tweet: tweet[0]
             }));
-    // console.log("like:", tweet);
 }
 
 
@@ -56,12 +58,10 @@ export const getCurrentProfile = (dispatch) => {
     })
         .then(response => response.json())
         .then(body => {
-            if (body != null && body.length > 0) {
-                dispatch({
-                    type: 'get-current-profile',
-                    profile: body[0]
-                })
-            }
+            dispatch({
+                type: 'get-current-profile',
+                profile: body
+            })
         });
 }
 
@@ -83,3 +83,13 @@ export const updateCurrentProfile = (dispatch, profile) => {
 
 }
 
+export const getAllPeople = (dispatch) =>
+    fetch(WHO_API)
+    .then(response => response.json())
+    .then(who => {
+        dispatch({
+            type: 'getAllPeople',
+            who
+        })
+        console.log(who)
+    });

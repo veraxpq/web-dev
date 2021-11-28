@@ -1,8 +1,7 @@
 import {useDispatch} from "react-redux";
-import {likeTweet} from "../../../../../services/twitterService";
+import {likeTweet} from "../../services/twitterService";
 import React from "react";
 
-const selectTweetStats = (state) => state.tweets
 const TweetStats = ({tweet}) => {
     const dispatch = useDispatch();
     const likeClickHandler = () => {

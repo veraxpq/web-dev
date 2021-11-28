@@ -4,7 +4,7 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import HelloWorld from "./components/a6/HelloWorld";
 import Build from "./components/a7/Build";
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Link, Route} from "react-router-dom";
 import HomeScreen from "./components/a6/build/HomeScreen/HomeScreen";
 import Explore from "./components/a6/build/ExploreScreen/explore";
 import Practice from "./components/a8/Practice"
@@ -23,14 +23,27 @@ import logger from 'redux-logger';
 import PracticeA6 from "./components/a6/Practice";
 import PracticeA7 from "./components/a7/Practice";
 import ExploreA8 from "./components/a8/a7/build/ExploreScreen/explore";
+import A9 from "./components/a9";
+import tweetsA9 from "./components/a9/reducers/tweets"
+import profileA9 from "./components/a9/reducers/profile"
+import whoA9 from "./components/a9/reducers/who"
+import HomeScreenA9 from "./components/a9/build/HomeScreen/HomeScreen";
+import ExploreA9 from "./components/a9/build/ExploreScreen/explore";
+import ProfileScreenA9 from "./components/a9/build/ProfileScreen";
+import EditProfileA9 from "./components/a9/build/EditProfile";
 
-const reducer = combineReducers({tweets, who, profile})
+const reducer = combineReducers({tweets, who, profile, tweetsA9, profileA9, whoA9})
 const store = createStore(reducer, applyMiddleware(logger));
 function App() {
   return (
       <Provider store={store}>
           <BrowserRouter>
               <div className="container">
+                  <Link to="/a6/practice">A6</Link> |
+                  <Link to="/a7/practice">A7</Link> |
+                  <Link to="/a8/practice">A8</Link> |
+                  <Link to="/a9/practice">A9</Link>
+
                   <Route path="/a6/hello" exact={true}>
                       <HelloWorld/>
                   </Route>
@@ -69,6 +82,9 @@ function App() {
                   </Route>
                   <Route path={"/a8/twitter/profile"}>
                       <ProfileScreenA8/>
+                  </Route>
+                  <Route path={"/a9"}>
+                      <A9/>
                   </Route>
               </div>
           </BrowserRouter>
