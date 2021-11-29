@@ -14,7 +14,7 @@ const NavigationSidebar = ({
                     <i className="fab fa-twitter"></i>
                 </Link>
 
-                <Link to={"/a8/twitter/home"} className={"list-group-item wd-left-bg" +
+                <Link to={"/a9/twitter/home"} className={"list-group-item wd-left-bg" +
                 (active.status === 'Home' ? ' active' : '')}>
                     <div className="row">
                         <div className="col-2">
